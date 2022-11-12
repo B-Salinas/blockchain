@@ -7,11 +7,10 @@
 # create a blockchain (an array containing instances of blocks)
 
 # -------------------------------------------------------------------------------------------------
-
-import hashlib
+from Block import Block # class from Block.py
 
 blockchain = []
 
-hash = hashlib.sha256("secret message goes here".encode()).hexdigest()
-
-
+genesis_block = Block("Chancellor on Brink of Second Bailout for Banks", [" ? -> 5 BTC -> Self"])
+adam_block = Block(genesis_block.block_hash, [" Creator -> 2 BTC -> Self"])
+lilith_block = Block(genesis_block.block_hash, [" Creator -> 2 BTC -> Self"])
