@@ -14,3 +14,6 @@ blockchain = []
 genesis_block = Block("Chancellor on Brink of Second Bailout for Banks", [" ? -> 5 BTC -> Self"])
 adam_block = Block(genesis_block.block_hash, [" Creator -> 2 BTC -> Self"])
 lilith_block = Block(genesis_block.block_hash, [" Creator -> 2 BTC -> Self"])
+
+# how to add things to the blockchain?
+  # that's when "order" becomes relevelant 
